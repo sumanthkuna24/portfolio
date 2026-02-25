@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main className="min-h-screen pt-32 pb-20 px-6 max-w-7xl mx-auto">
       {/* Hero Section */}
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
+      <section className="grid grid-cols-1 gap-16 items-center mb-32">
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -43,33 +43,6 @@ export default function Home() {
           </div>
         </motion.div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative"
-        >
-          <div className="aspect-square rounded-3xl overflow-hidden bg-surface border border-ink/5 shadow-2xl">
-            <img
-              src="https://picsum.photos/seed/sumanth-dev/1000/1000"
-              alt="Sumanth Kuna"
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
-              referrerPolicy="no-referrer"
-            />
-          </div>
-          {/* Floating stats or badges */}
-          <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl border border-ink/5 hidden md:block">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-600">
-                <ArrowRight className="w-6 h-6 rotate-[-45deg]" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold">LPU</p>
-                <p className="text-muted text-sm uppercase tracking-widest font-semibold">CSE Student</p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </section>
 
       {/* Featured Section */}
@@ -89,7 +62,7 @@ export default function Home() {
             {
               title: "OddStrike",
               category: "Real-Time Multiplayer Game",
-              image: "https://picsum.photos/seed/oddstrike-game-ui/1200/800",
+              image: "/oddstrike-home.png",
               tags: ["Socket.IO", "React", "Node.js"],
               github: "https://github.com/sumanthkuna24/Odd-Strike"
             },
